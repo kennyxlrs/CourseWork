@@ -1,0 +1,19 @@
+startprogram ; 
+startblock data longint AA01 , BB01 , XX01 , YY01 ;
+
+  read AA01;
+  read BB01;
+  
+  write( AA01 add BB01 );
+  write( AA01 sub BB01 );
+  write( AA01 * BB01 );
+  write( AA01 / BB01 );
+  write( AA01 % BB01 );
+
+ (AA01 sub BB01) * 10 add (AA01 add BB01) / 10 :> XX01;
+  XX01 add XX01 % 10 :> YY01;
+
+  write( XX01 );
+  write( YY01 );
+
+endblock

@@ -1,0 +1,36 @@
+startprogram
+startblock data
+    longint aa12, bb34, cc56, mm78;
+endblock
+
+read aa12;
+read bb34;
+read cc56;
+
+if aa12 >= bb34 and aa12 >= cc56 {
+    aa12 :> mm78;
+} else if bb34 >= aa12 and bb34 >= cc56 {
+    bb34 :> mm78;
+} else {
+    cc56 :> mm78;
+}
+write mm78;
+
+if (aa12 == bb34) and (aa12 == cc56) and (bb34 == cc56) {
+    write 1;
+} else {
+    write 0;
+}
+
+if ! (aa12 >= 0) or ! (bb34 >= 0) or ! (cc56 >= 0) {
+    write -1;
+} else {
+    write 0;
+}
+
+if aa12 >= (bb34 add cc56) {
+    write 10;
+} else {
+    write 0;
+}
+endprogram
