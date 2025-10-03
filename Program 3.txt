@@ -6,7 +6,7 @@ endblock
 read aa12;
 read bb34;
 
-for cc56 :> aa12 to bb34 do
+goto cc56 :> aa12 to bb34 do
     write (cc56 * cc56);
 
 0 :> xx90;
@@ -16,3 +16,4 @@ for cc56 :> 1 to aa12 do
 write xx90;
 
 endprogram
+
